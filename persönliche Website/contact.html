@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Kontaktformular</title>
+        <link rel="stylesheet" type="text/css" href="./src/css/contactForm.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+            <form action="https://formspree.io/f/xrbgpvee" method="POST">
+          
+              <label for="fname">Vorname</label>
+              <input type="text" id="fname" name="firstname" placeholder="Dein Vorname..." required>
+          
+              <label for="lname">Nachname</label>
+              <input type="text" id="lname" name="lastname" placeholder="Dein Nachname..." required>
+          
+              <label for="email">E-Mail</label>
+              <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse..." required>
+
+              <label for="country">Land</label>
+              <select id="country" name="country" required>
+                <option value="germany">Deutschland</option>
+                <option value="austria">Österreich</option>
+                <option value="switzerland">Schweiz</option>
+              </select>
+          
+              <label for="subject">Thema</label>
+              <textarea id="subject" name="subject" placeholder="Was willst du mir mitteilen?" style="height:200px" required></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+          
+
+    </body>
+
+</html>

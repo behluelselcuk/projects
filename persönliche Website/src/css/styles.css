@@ -1,0 +1,337 @@
+:root {
+    --dark_blue: #050A30;
+    --navy_blue: #000C66;
+    --blue: #0000FF;
+    --baby_blue: #7EC8E3;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+/* === GLOBAL === */
+
+
+
+
+
+/* === NAVIGATION === */
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: var(--dark_blue);
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#logo_behlül_samil_selcuk {
+    width: 150px;
+    height: auto;
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+#logo_behlül_samil_selcuk:hover {
+    background-color: var(--baby_blue);
+    border-radius: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    grid-column: 5 / -1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 4;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+}
+
+#navbar ul li {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+#navbar ul li:first-of-type {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#navbar ul li:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#navbar ul li:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#navbar ul li:last-of-type {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#navbar ul li:hover {
+    background-color: var(--navy_blue);
+}
+
+.about_me {
+    background-color: var(--baby_blue);
+}
+
+.about_me:hover {
+    background-color: var(--blue);
+    color: var(--baby_blue);
+}
+
+.about_me a:hover {
+    color: var(--baby_blue);
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+
+
+/* === MAIN === */
+
+main {
+    background: var(--dark_blue);
+}
+
+
+/* === WELCOME-SECTION === */
+
+#welcome-section {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    color: var(--blue);
+    background-color: var(--dark_blue);
+}
+
+#welcome-section h1 {
+    font-size: 3rem;
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+#welcome-section p {
+    font-size: 1.5rem;
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+#welcome-section #title_picture {
+    grid-column: 6 / 9;
+    grid-row: 1 / 4;
+    width: 500px;
+    height: auto;
+}
+
+#welcome-section .button {
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#welcome-section .button:first-of-type {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: var(--baby_blue);
+    border: 1px solid var(--baby_blue);
+    color: var(--blue);
+}
+
+#welcome-section .button:last-of-type {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: transparent;
+    border: 1px solid var(--baby_blue);
+    color: var(--blue);
+}
+
+#welcome-section .button:hover {
+    background-color: var(--navy_blue);
+    cursor: pointer;
+}
+
+
+
+/* === SKILLS === */
+
+#skills {
+    background-color: var(--white);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 17rem;
+}
+
+#skills h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 3rem;
+    color: var(--navy_blue);
+}
+
+.skill {
+    width: 300px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill h2 {
+    color: var(--navy_blue);
+}
+
+.skill p {
+    font-size: 1.5rem;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--baby_blue);
+    color: var(--blue);
+    padding: 10px;
+}
+
+.skill:first-of-type {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.skill:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.skill:last-of-type {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.skill_picture {
+    width: 150px;
+    height: auto;
+}
+
+
+
+/* === PROJECTS === */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: space-around;
+    padding-bottom: 7rem;
+}
+
+#projects h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--blue);
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+#projects h2 {
+    color: var(--white);
+    grid-column: 2 / 4;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/* === ABOUT ME === */
+
+#about_me {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#about_me h1 {
+    font-size: 3rem;
+    color: var(--navy_blue);
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#about_me p {
+    font-size: 1.5rem;
+    color: var(--blue);
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#about_me img {
+    width: 300px;
+    height: auto;
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* === FOOTER === */
+
+footer {
+    background-color: var(--dark_blue);
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p a {
+    text-decoration: none;
+}
+
+
+
+/* === RESPONSIVE DESIGN === */
+
+@media (min-width: 1440px) {
+
+}
